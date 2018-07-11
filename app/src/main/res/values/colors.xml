@@ -3,4 +3,10 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#fafafa</color>
+    <color name="black">#212121</color>
+    <color name="linkWater">#26CAD3E1</color>
+    <color name="spindle">#B9BFD0</color>
+    <color name="magenta">#F50057</color>
 </resources>

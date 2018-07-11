@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/linkWater">
+
+    <TextView
+        android:id="@+id/movies_fragment_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:elevation="4dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Movies"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/movies_underline"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:background="@drawable/underline"
+        app:layout_constraintEnd_toEndOf="@+id/movies_fragment_button"
+        app:layout_constraintHorizontal_bias="0.34"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/movies_fragment_button" />
+
+    <TextView
+        android:id="@+id/tv_shows_fragment_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:elevation="4dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="TV Shows"
+        android:textColor="@color/spindle"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/movies_underline"
+        app:layout_constraintStart_toEndOf="@+id/movies_fragment_button"
+        app:layout_constraintTop_toTopOf="@+id/movies_fragment_button" />
+
+    <TextView
+        android:id="@+id/tv_shows_underline"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:background="@drawable/underline"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/tv_shows_fragment_button"
+        app:layout_constraintHorizontal_bias="0.42"
+        app:layout_constraintStart_toEndOf="@+id/movies_fragment_button"
+        app:layout_constraintTop_toBottomOf="@+id/tv_shows_fragment_button" />
+
+    <RelativeLayout
+        android:id="@+id/layout_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/movies_underline"
+        app:layout_constraintVertical_bias="0.6" />
+
+</android.support.constraint.ConstraintLayout>
